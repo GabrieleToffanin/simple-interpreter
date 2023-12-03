@@ -45,7 +45,7 @@ void write_chunk(Chunk* chunk, uint8_t byte, int line){
     chunk->lines.capacity = GROW_CAPACITY(old_capacity);
     chunk->lines.lines = GROW_ARRAY(LineValue, chunk->lines.lines, old_capacity, chunk->lines.capacity);
     int i;
-    for (i = 0; i < chunk->lines.capacity; i++) {
+    for (i = old_capacity; i < chunk->lines.capacity; i++) {
         chunk->lines.lines[i] = 0;
     }
   }

@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Exe produced by gcc compilation
+*.exe
+*.sln
+*.vcxproj
+*.vcxproj.*

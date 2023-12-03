@@ -3,6 +3,7 @@
 #include "common.h"
 #include"debug.h"
 #include "chunk.h"
+#include "time.h"
 
 int main(){
   Chunk chunk;
